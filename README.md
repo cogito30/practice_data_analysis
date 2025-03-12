@@ -5,16 +5,77 @@
 - data visualization
 - statistic
 
+## Environment
+- miniconda
+- python 3.12
+- pandas
+- matplotlib + seaborn + plotly
+
+## How to Setting Environment
+- install miniconda && check version
+```bash
+brew install miniconda
+conda --version
+```
+- updata conda
+```bash
+conda update --all
+```
+- check virtual env list
+```bash
+conda info --envs
+conda env list
+```
+- check available python list
+```bash
+conda search python
+```
+- create virtual environment
+```bash
+conda create -n "virtual_name" python=[version]
+conda create --name "new_virtual_name" --clone "virtual_name"
+```
+- remove virtual environment
+```bash
+conda remove --name "virtual_name" --all
+conda env remove -n "virtual_name"
+```
+- check env info && install package
+```bash
+conda info
+conda list
+```
+- active/deactive virtual environment
+```bash
+conda active "virtual_name"
+conda deactive
+```
+- install/uninstall package
+```bash
+conda install [package]
+conda uninstall [package]
+```
+
+- install/uninstall python package
+```bash
+pip install [package] --force-reinstall
+pip install [package] --upgrade
+pip install -r [requirements.txt]
+pip uninstall [package]
+```
+
 ## Reference
 #### GUI
 - [Tkinter](https://docs.python.org/3/library/tkinter.html)
 - [PyQt6](https://www.riverbankcomputing.com/software/pyqt/)
+- [Jupyter](https://jupyter.org/)
 #### Data Processing && Visualization
 - [Data Science School](https://datascienceschool.net/intro.html)
 - [Pandas](https://pandas.pydata.org/)
 - [Matplotlib](https://matplotlib.org/)
 - [Seaborn](https://seaborn.pydata.org/)
 - [Plotly](https://plotly.com/python/)
+- [scikit-learn](https://scikit-learn.org/stable/)
 #### Data Source
 - [Kaggle](https://www.kaggle.com/competitions)
 - [DACON](https://dacon.io/)
